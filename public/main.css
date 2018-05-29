@@ -1,0 +1,99 @@
+html {
+	box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+}
+h1 {
+	text-align: center;
+	padding: 1em;
+}
+ul li {
+	text-decoration: none;
+}
+
+nav {
+	border : 1px solid black;
+}
+nav ul {
+	display : flex;
+	flex-direction : row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding : 2em; 
+}
+
+nav ul li {
+	width: 20%;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color : white;
+	background-color: #bebebb;
+	padding : 0.5em;
+	border-radius : 5%;
+}
+
+.selected {
+	background-color : #b3be80;
+}
+#imageheader {
+	width : 200px;
+	background-image: url('https://lefouduroy.files.wordpress.com/2013/03/chevalier.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+form {
+	display : flex;
+	flex-direction: column;
+	text-align: center;
+	margin : 0 auto;
+}
+form label {
+	padding : 1em;
+}
+form button {
+}
+main {
+	box-sizing: border-box;
+	text-align: center;
+}
+table {
+	padding: 1em;
+	border : 1px solid black;
+	width : 80%;
+	margin: 0 auto;
+}
+table tr:first-child {
+	font-size : 1.2em;
+	color : #6d7b2d;
+	background-color: #ddcb58;
+}
+th {
+padding : 1em;
+border-bottom: 0.5px solid black;
+}
+tr {
+	text-align : center;
+}
+table img {
+	max-width : 150px;
+}
+caption {
+	font-size : 3em;
+	padding : 1em;
+	margin : 1em 0;
+}
+td {
+	border-bottom : 0.2px solid black; 
+}
+table a {
+	text-decoration : none;
+	color : black;
+	border-radius : 8%;
+	background-color: silver;
+	padding : 0.5em;
+}

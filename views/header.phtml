@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Arena</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<h1>L'ultime combat se déroule dans l'arène</h1>
+		<div id="imageheader"></div>
+		<nav>
+			<ul>
+				<li><a class="<?= $page == 'home' ? 'selected' : ''?>" href="home.php">Accueil</a></li>
+				<li><a class="<?= $page == 'create' ? 'selected' : ''?>" href="create.php">Créer un personnage</a></li>
+				<li><a class="<?= $page == 'list' ? 'selected' : ''?>" href="list.php">Liste des personnages</a></li>
+				<li><a class="<?= $page == 'arena' ? 'selected' : ''?>"href="#">L'arène</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
