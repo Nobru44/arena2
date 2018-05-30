@@ -8,15 +8,15 @@
 				<label for="armor">Armure</label>
 				<input type="text" name="armor" id="armor">
 				<label for="weapon">Arme</label>
-     	        <select name="id" id="weapon">
+     	        <select name="weapon" id="weapon">
      	        	<?php
      	        	   	foreach ($weaponsList as $weapon):?>
-						<option name="<?=$weapon['id']?>"><?=$weapon['weaponName']?></option>
-					<?php endforeach ?>
+						<option value="<?=$weapon['id']?>"><?=$weapon['weaponName']?></option>
+					<?php endforeach; ?>
        			</select>
 				<label for="avatar">Ton apparence</label>
 				<input type="text" name="avatar" id="avatar">
 
-				<button>Valider</button>
+				<button type="submit" name="submit">Valider</button>
 			</form>
 		</div>

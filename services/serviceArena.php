@@ -46,3 +46,14 @@ function getConnection() {
 	$db->exec('SET NAMES UTF8');
 	return $db;
 }
+
+
+function addHeroe ($hero) {
+	
+	$db = getConnection();
+	$sql = "INSERT INTO heroes (name, hp, armor, id_weapon, avatar) VALUES(:name, :hp, :armor, )";
+	$statement = $db->prepare($sql);
+	$db->exec('SET NAMES UTF8');
+
+	$statement->execute($hero);
+}
