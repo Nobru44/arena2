@@ -8,7 +8,7 @@ function pre($thing) {
 function getHeroesList() {
 	$sql = "SELECT * FROM heroes LEFT JOIN weapons ON weapons.id = heroes.weapon_id";
 
-	$db = new PDO('mysql:host=localhost;dbname=arena', 'root', 'troiswa');
+	$db = new PDO('mysql:host=localhost;dbname=arena', 'nobru974', 'cuba2018');
 
 	$statement = $db->prepare($sql);
 	$db->exec('SET NAMES UTF8');
@@ -23,7 +23,7 @@ function getHeroesList() {
 function getWeaponsList() {
 	$sql = "SELECT * FROM weapons ORDER BY id";
 
-	$db = new PDO('mysql:host=localhost;dbname=arena', 'root', 'troiswa');
+	$db = new PDO('mysql:host=localhost;dbname=arena', 'nobru974', 'cuba2018');
 
 	$statement = $db->prepare($sql);
 	$db->exec('SET NAMES UTF8');
@@ -35,8 +35,8 @@ function getWeaponsList() {
 }
 
 function getConnection() {
-	$user = 'root';
-	$password = 'troiswa';
+	$user = 'nobru974';
+	$password = 'cuba2018';
 	$db = new PDO(
 		'mysql:host=localhost;dbname=arena', 
 		$user, 
@@ -51,7 +51,7 @@ function getConnection() {
 function addHeroe ($hero) {
 	
 	$db = getConnection();
-	$sql = "INSERT INTO heroes (name, hp, armor, id_weapon, avatar) VALUES(:name, :hp, :armor, )";
+	$sql = "INSERT INTO heroes (name, hp, armor, weapon_id, avatar) VALUES (:name, :hp, :armor, :weapon_id, :avatar)";
 	$statement = $db->prepare($sql);
 	$db->exec('SET NAMES UTF8');
 

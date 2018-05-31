@@ -7,6 +7,7 @@ ul {
 h1 {
 	text-align: center;
 	padding: 1em;
+	color: white;
 }
 ul li {
 	text-decoration: none;
@@ -38,12 +39,12 @@ nav ul li a {
 .selected {
 	background-color : #b3be80;
 }
-#imageheader {
-	width : 200px;
-	background-image: url('https://lefouduroy.files.wordpress.com/2013/03/chevalier.jpg');
+header {
+	background-image: url('https://minimumwagehistorian.files.wordpress.com/2013/12/fantasy-battle-fantasy-30185358-700-393.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
+	background-color: 
 }
 
 form {
@@ -51,11 +52,15 @@ form {
 	flex-direction: column;
 	text-align: center;
 	margin : 0 auto;
+	width : 50%;
 }
 form label {
 	padding : 1em;
 }
 form button {
+	width : 150px;
+	height: 30px;
+	margin : 0 auto;
 }
 main {
 	box-sizing: border-box;
