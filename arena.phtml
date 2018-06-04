@@ -1,0 +1,25 @@
+
+<section class="intro">
+	<h2>Le combat va débuter</h2>
+	<p>L'heure de vérité est arrivée. Le combat des champions est lancé. La récompense ? L'elixir de vie et peut-être un indice conduisant à l'étoile de la mort.</p>
+</section>
+<section class="combat">
+	<h3>Choissisez les héros qui vont s'affronter</h3>
+	<ul class='listFigthers'>
+
+<?php 
+	$listHeroes = getHeroesList();
+	foreach ($listHeroes AS $hero):?>
+	<li><img src="<?=$hero['avatar']?>">
+		<p><?=$hero['name']?></p>
+	</li>
+<?php endforeach ?>
+
+	</ul>
+	<p id="total">Vous avez sélectionné <em>0</em> combattant(s)</p>
+	<a href="arena.php?choice=<?=$hero['name']?>" id='figth' name='choice'>Lancer le combat</a>
+</section>
+<?php $recup = $_GET['choice'];
+pre($recup);
+?>
+<script src="../js/main.js"></script>

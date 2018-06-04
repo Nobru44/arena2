@@ -1,0 +1,35 @@
+	<table>
+		<table>
+			<caption>Les héros en lice</caption>
+			<tr>
+		           <th>Nom</th>
+
+		           <th>Points de vie</th>
+
+		           <th>Armure</th>
+
+					<th>Arme</th>
+
+					<th>Les dégâts</th>
+
+					<th>Son avatar</th>
+		    </tr>
+	   		<?php foreach($heroes AS $hero):?>
+				<tr>
+
+		           <td><?=$hero['name']?></td>
+
+		           <td><?=$hero['hp']?></td>
+
+		           <td><?=$hero['armor']?></td>
+
+		           <td><img src="<?=$hero['image']?>"><?=$hero['weaponName']?></td>
+
+		           <td><?=$hero['damage_min']?>/<?=$hero['damage_max']?></td>
+
+		           <td><img src="<?=$hero['avatar']?>"></td>
+
+		           <td><a href="list.php?remove=<?=$hero['name']?>" name="remove">Eliminer ce héros</a></td>
+		       </tr>
+			<?php endforeach ?>
+	</table>
